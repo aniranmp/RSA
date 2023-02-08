@@ -62,7 +62,7 @@ public class RsaEncryptor {
 //        encryptCipher.init(Cipher.ENCRYPT_MODE, publicKey);
 //        byte[] secretMessageBytes = secretMessage.getBytes(StandardCharsets.UTF_8);
 //        byte[] encryptedMessageBytes = encryptCipher.doFinal(secretMessageBytes);
-////        String encodedMessage = Base64.getEncoder().encodeToString(encryptedMessageBytes);
+//        String encodedMessage = Base64.getEncoder().encodeToString(encryptedMessageBytes);
 //        String encodedMessage = Base64.encodeBase64String(encryptedMessageBytes);
 //        Cipher decryptCipher = Cipher.getInstance("RSA");
 //        decryptCipher.init(Cipher.DECRYPT_MODE, privateKey);

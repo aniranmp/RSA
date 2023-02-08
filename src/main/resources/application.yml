@@ -1,16 +1,21 @@
 server:
-  port: 8090
-
+  port: 2023
+  error:
+    include-message: always
 
 ---
 spring:
   boot:
     admin:
       api-path: /instances
-      url: http://localhost:8090
+      url: http://localhost:2023
       client:
-        url: http://localhost:8090
-
+        url: http://localhost:2023
+  main:
+    banner-mode: off
+  output:
+    ansi:
+      enabled: always
 ---
 management:
   security:
