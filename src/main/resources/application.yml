@@ -1,0 +1,23 @@
+server:
+  port: 8090
+
+
+---
+spring:
+  boot:
+    admin:
+      api-path: /instances
+      url: http://localhost:8090
+      client:
+        url: http://localhost:8090
+
+---
+management:
+  security:
+    enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+    health:
+      show-details: always
